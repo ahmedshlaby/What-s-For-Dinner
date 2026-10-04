@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f7df
+}
+
+
+.logo-pic {
+    background-color: #FD4327;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo-pic i {
+    font-size: 1.5rem;
+}
+
+
+.navlogo {
+    font-size: 0.8rem;
+}
+
+
+.nav-profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FD4327;
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+}
+
+.navbar .nav-link:hover i {
+    color: #FD4327;
+    transition: 0.3s;
+}
+
+.meal-img .rate {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.meal-info {
+    bottom: 10px;
+    border-radius: 20px;
+}
+
+.meal-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+
+.recipe-tabs .nav-link {
+    color: #626f84;
+}
+
+.recipe-tabs .nav-link.active {
+    color: #FD4327;
+}
+
+.recipe-tabs .nav-link:hover {
+    color: #364153;
+    border-bottom: none;
+}
+
+.recipe-tabs .nav-link i {
+    font-size: 0.9rem;
+}
+
+.ingredients .list-group-numbered>.list-group-item::before {
+    content: counters(section, ".");
+    counter-increment: section;
+    background-color: #FD4327;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.alert {
+    border-left: 5px solid #dc3545;
+}
+
+
+.ingredients .list-group-numbered .list-group-item,
+.instructions .list-group-numbered .list-group-item {
+    border: none;
+}
+
+.tab-content .ingredients .list-group {
+    --bs-list-group-bg: #fff6f6;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+
+.instructions .list-group-numbered>.list-group-item::before {
+    content: counters(section, ".");
+    counter-increment: section;
+    background-color: #FF6900;
+    color: white;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.instructions li {
+    font-size: 0.9rem;
+}
+
+.nutrition-card {
+    background-color: #F9FAFB;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.nutrition-card .icon-box-cal {
+    background-color: #FFEDD4;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.nutrition-card .icon-box-cal i {
+    color: #FF6900;
+    font-size: 1.2rem;
+}
+
+.nutrition-card .icon-box-protein {
+    background-color: #E0F2FE;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.nutrition-card .icon-box-protein i {
+    color: #3B82F6;
+    font-size: 1.2rem;
+}
+
+.nutrition-card .icon-box-carbs {
+    background-color: #FEF3C7;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.nutrition-card .icon-box-carbs i {
+    color: #F59E0B;
+    font-size: 1.2rem;
+}
+
+.nutrition-card .icon-box-fat {
+    background-color: #FEE2E2;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.nutrition-card .icon-box-fat i {
+    color: #EF4444;
+    font-size: 1.2rem;
+}
+
+.nutrition-card .icon-box-fiber {
+    background-color: #DCFCE7;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.nutrition-card .icon-box-fiber i {
+    color: #10B981;
+    font-size: 1.2rem;
+}
+
+.nutrition-card .icon-box-sodium {
+    background-color: #FCE7F3;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.nutrition-card .icon-box-sodium i {
+    color: #DB2777;
+    font-size: 1.2rem;
+}
+
+
+.tip-card {
+    background-color: #f8f3df;
+    border-left: 5px solid #ff9800;
+}
+
+.check-icon {
+    width: 28px;
+    height: 28px;
+    background-color: #e65100;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    flex-shrink: 0;
+
+}
+
+.shuffle-btn {
+    background-color: #FD4327;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.shuffle-btn:hover {
+    background-color: #e03b1f;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
